@@ -13,9 +13,9 @@ class Humanoid {
 	float weight;
 	int age;
 public:
-	//creates the Humanoid object
+	//default constructor - creates the Humanoid object
 	Humanoid();
-	//create the Humanoid object passing multiple values
+	//parameterized constructor - create the Humanoid object passing multiple values/parameters
 	Humanoid(string _race, string _name, string _eyeColour, string _hairColour, char _gender, float _weight, int _age);
 
 	//sets variables into the Humanoid object
@@ -36,6 +36,8 @@ public:
 	float getWeight();
 	int getAge();
 
-	//
+	//humanoid functions
 	void display() const;
+	//deconstructor
+	~Humanoid();
 };

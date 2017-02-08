@@ -80,3 +80,8 @@ void  Humanoid::display() const {
 		"Age: " << age << endl;
 	return;
 }
+
+Humanoid::~Humanoid()
+{
+	cout << "-->object being destroyed<--" << endl;
+}
